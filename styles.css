@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    font-family: 'Acme', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(188, 219, 229);
+}
+
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+#jokes-body{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#get-joke{
+    border-style: none;
+    background-color: #7BFA3C;
+    padding: 0.7em 1.3em;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1.4);
+    margin-bottom: 3rem;
+    border: 2px solid darkgreen;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#get-joke:hover{
+    background-color: #7df044;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    min-width: 75%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    border-top: 2px solid rgb(94, 187, 218);
+    border-left: 2px solid rgb(94, 187, 218);
+    border-right: 2px solid rgb(94, 187, 218);
+}
+
+li{
+    padding: 1rem;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: 2px solid rgb(94, 187, 218);
+    list-style-type: none;
+}
+
+@media (max-width: 850px) {
+    #jokes-body{
+        width: 95%;
+    }
+}
